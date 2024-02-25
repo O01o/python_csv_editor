@@ -1,0 +1,29 @@
+[project]
+name = "python-csv-editor"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "O01o", email = "77559448+O01o@users.noreply.github.com" }
+]
+dependencies = [
+    "nuitka>=2.0.3",
+    "pandas>=2.2.1",
+    "numpy>=1.26.4",
+    "pysimplegui>=5.0.2",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/python_csv_editor"]
